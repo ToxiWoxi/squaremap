@@ -12,7 +12,7 @@ class PlayerList {
     }
     tick() {
         if (P.tick_count % P.worldList.curWorld.player_tracker.update_interval == 0) {
-            P.getJSON("tiles/players.json", (json) => {
+            P.getJSON("https://map.smp.idiotsmmo.net/tiles/players.json", (json) => {
                 this.updatePlayerList(json.players);
                 const title = `${this.label}`
                     .replace(/{cur}/g, json.players.length)

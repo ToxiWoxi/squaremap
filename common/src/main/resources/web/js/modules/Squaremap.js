@@ -47,7 +47,7 @@ class SquaremapMap {
         this.worldList.curWorld.tick();
     }
     init() {
-        this.getJSON("tiles/settings.json", (json) => {
+        this.getJSON("js/settings.json", (json) => {
             this.layerControl.init();
 
             this.title = json.ui.title;

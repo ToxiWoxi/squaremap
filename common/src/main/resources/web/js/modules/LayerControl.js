@@ -70,7 +70,7 @@ class LayerControl {
         this.playersLayer.setZIndex(world.player_tracker.z_index);
     }
     createTileLayer(world) {
-        return new SquaremapTileLayer(`tiles/${world.name}/{z}/{x}_{y}.png`, {
+        return new SquaremapTileLayer(`https://map.smp.idiotsmmo.net/tiles/${world.name}/{z}/{x}_{y}.png`, {
             tileSize: 512,
             minNativeZoom: 0,
             maxNativeZoom: world.zoom.max

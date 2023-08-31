@@ -20,7 +20,7 @@ class World {
         }
         // load and draw markers
         if (P.tick_count % this.marker_update_interval == 0) {
-            P.getJSON(`tiles/${this.name}/markers.json`, (json) => {
+            P.getJSON(`https://map.smp.idiotsmmo.net/tiles/${this.name}/markers.json`, (json) => {
                 if (this === P.worldList.curWorld) {
                     this.markers(json);
                 }
@@ -38,7 +38,7 @@ class World {
         }
     }
     load(callback) {
-        P.getJSON(`tiles/${this.name}/settings.json`, (json) => {
+        P.getJSON(`https://map.smp.idiotsmmo.net/tiles/${this.name}/settings.json`, (json) => {
             this.player_tracker = json.player_tracker;
             this.zoom = json.zoom;
             this.spawn = json.spawn;
