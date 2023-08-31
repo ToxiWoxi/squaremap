@@ -53,7 +53,7 @@ div.leaflet-control-layers.link img {
   height: 34px;
   vertical-align: bottom;
   bottom: 0;
-  background-image: url("../images/link.png");
+  background-image: url("/map/shared/images/link.png");
   background-size: 20px 20px;
   background-repeat: no-repeat;
   background-position: 50% 50%;

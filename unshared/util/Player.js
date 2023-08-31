@@ -18,7 +18,7 @@ class Player {
         });
         this.marker = L.marker(P.toLatLng(json.x, json.z), {
             icon: L.icon({
-                iconUrl: 'images/icon/player.png',
+                iconUrl: '/map/shared/images/icon/player.png',
                 iconSize: [17, 16],
                 iconAnchor: [8, 9],
                 tooltipAnchor: [0, 0]
@@ -43,10 +43,10 @@ class Player {
             headImg = `<img src='${this.getHeadUrl()}' class="head" />`;
         }
         if (P.worldList.curWorld.player_tracker.nameplates.show_armor && player.armor != null) {
-            armorImg = `<img src="images/armor/${Math.min(Math.max(player.armor, 0), 20)}.png" class="armor" />`;
+            armorImg = `<img src="/map/shared/images/armor/${Math.min(Math.max(player.armor, 0), 20)}.png" class="armor" />`;
         }
         if (P.worldList.curWorld.player_tracker.nameplates.show_health && player.health != null) {
-            healthImg = `<img src="images/health/${Math.min(Math.max(player.health, 0), 20)}.png" class="health" />`;
+            healthImg = `<img src="/map/shared/images/health/${Math.min(Math.max(player.health, 0), 20)}.png" class="health" />`;
         }
         this.tooltip.setContent(`<ul><li>${headImg}</li><li>${this.displayName}${healthImg}${armorImg}</li>`);
     }

@@ -39,16 +39,16 @@ class WorldList {
     }
     getIcon(world) {
         if (world.icon != null && world.icon != "") {
-            return `images/icon/${world.icon}.png`;
+            return `/map/shared/images/icon/${world.icon}.png`;
         }
         switch (world.type) {
             case "nether":
-                return "images/icon/red-cube-smol.png";
+                return "/map/shared/images/icon/red-cube-smol.png";
             case "the_end":
-                return "images/icon/purple-cube-smol.png";
+                return "/map/shared/images/icon/purple-cube-smol.png";
             case "normal":
             default:
-                return "images/icon/green-cube-smol.png";
+                return "/map/shared/images/icon/green-cube-smol.png";
         }
     }
     loadInitialWorld(json, callback) {

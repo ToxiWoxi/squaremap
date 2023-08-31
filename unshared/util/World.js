@@ -81,12 +81,12 @@ class World {
     getBackground() {
         switch (this.type) {
             case "nether":
-                return "url('images/nether_sky.png')";
+                return "url('/map/shared/images/nether_sky.png')";
             case "the_end":
-                return "url('images/end_sky.png')";
+                return "url('/map/shared/images/end_sky.png')";
             case "normal":
             default:
-                return "url('images/overworld_sky.png')";
+                return "url('/map/shared/images/overworld_sky.png')";
         }
     }
     markers(json) {
